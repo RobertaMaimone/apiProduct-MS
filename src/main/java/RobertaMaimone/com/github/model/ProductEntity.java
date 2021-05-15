@@ -13,12 +13,10 @@ public class ProductEntity {
     @Id
     private String idProduct;
 
-    @Valid
     @NotEmpty(message = "{campo.nome.product.obrigatorio}")
     @Column(nullable = false, length = 150)
     private String nameProduct;
 
-    @Valid
     @NotEmpty(message = "{campo.description.product.obrigatorio}")
     @Column(nullable = false, length = 100)
     private String descriptionProduct;
